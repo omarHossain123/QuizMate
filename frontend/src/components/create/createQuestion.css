@@ -1,0 +1,71 @@
+/* General Container */
+.create-question-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Header */
+.create-question-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #cfd8dc;
+}
+
+/* Form Styling */
+.create-question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-question-form label {
+  font-size: 0.9rem;
+  color: #cfd8dc;
+  margin-bottom: 8px;
+}
+
+.create-question-form input {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 0.95rem;
+}
+
+.create-question-form input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.create-question-form input:focus {
+  outline: none;
+  border-color: #00b4d8;
+  box-shadow: 0 0 8px rgba(0, 180, 216, 0.8);
+}
+
+/* Button Styling */
+.create-question-form button {
+  background: linear-gradient(to right, #00b4d8, #0077b6);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.create-question-form button:hover {
+  opacity: 0.9;
+}

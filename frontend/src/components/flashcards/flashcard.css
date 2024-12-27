@@ -1,0 +1,112 @@
+.flashcard-container {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  perspective: 1200px;
+  margin: auto;
+}
+
+.flashcard {
+  width: 95%;
+  height: 88%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.7s ease-in-out;
+  background: linear-gradient(135deg, #1e1f36, #2c305e);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard .front,
+.flashcard .back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.flashcard .front p,
+.flashcard .back p {
+  margin: 8px 0;
+}
+
+.reveal-text {
+  font-size: 0.9rem;
+  color: #cfd8dc;
+  font-style: italic;
+  margin-top: 16px;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 92%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  border-radius: 12px;
+  color: #cfd8dc;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.front {
+  background: linear-gradient(135deg, #5271ff, #3045a3);
+}
+
+.back {
+  background: linear-gradient(135deg, #5271ff, #3045a3);
+  transform: rotateY(180deg);
+}
+
+.flashcard-container .text-sm {
+  font-size: 0.9rem;
+  color: #cfd8dc;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* Navigation Buttons */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #cfd8dc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #5271ff;
+  color: white;
+  box-shadow: 0 4px 10px rgba(82, 113, 255, 0.5);
+}
+
+span {
+  font-size: 0.9rem;
+  color: #cfd8dc;
+}

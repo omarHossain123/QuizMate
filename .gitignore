@@ -1,0 +1,17 @@
+# Byte-compiled files
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/utils/__pycache__/
+
+# Virtual environment (inside the backend folder)
+backend/venv/
+backend/env/
+
+
+
+# dependencies
+frontend/node_modules
+frontend/.pnp
+frontend.pnp.js
+

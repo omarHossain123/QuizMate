@@ -1,0 +1,49 @@
+/* General Layout */
+.layout-container {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1f36, #2c305e);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers content vertically */
+  padding: 20px;
+}
+
+/* Tabs Section */
+.tabs-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.tab-button {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #cfd8dc;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background: #5271ff;
+  color: white;
+  box-shadow: 0 4px 10px rgba(82, 113, 255, 0.5);
+}
+
+/* Content Area */
+.content-area {
+  width: 100%;
+  max-width: 900px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
