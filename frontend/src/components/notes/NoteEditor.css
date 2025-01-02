@@ -1,0 +1,112 @@
+.note-editor {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.note-editor:hover {
+  border-color: rgba(0, 180, 216, 0.3);
+}
+
+.note-editor-header {
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.note-editor-header h3 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.note-editor-fields {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-input,
+.note-textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.note-input {
+  height: 48px;
+}
+
+.note-textarea {
+  height: 200px;
+  resize: vertical;
+  min-height: 150px;
+  line-height: 1.5;
+}
+
+.note-input:focus,
+.note-textarea:focus {
+  outline: none;
+  border-color: #00b4d8;
+  box-shadow: 0 0 0 2px rgba(0, 180, 216, 0.2);
+}
+
+.note-input::placeholder,
+.note-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.save-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.save-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 180, 216, 0.3);
+}
+
+.save-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .note-editor {
+    border-radius: 12px;
+  }
+
+  .note-editor-header,
+  .note-editor-fields {
+    padding: 1rem;
+  }
+
+  .save-button {
+    width: 100%;
+  }
+}
